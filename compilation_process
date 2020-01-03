@@ -1,0 +1,14 @@
+Understanding how gcc carries out compilation
+
+* What steps are involved in gcc compilation?
+
+	- Preprocessing:
+		* gcc -E -o 008_sample_exp.c 008_sample.c
+	- Compilation:
+		* gcc -S 008_sample_exp.c
+	- Assembly:
+		* gcc -c 008_sample_exp.s
+	- Linking:
+		* gcc -o 008_sample 008_sample_exp.s
+
+* Compile a file in each individual step.
